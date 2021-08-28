@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="CSS\module.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<html>
+
+
+
+<body>
+
+
+<link href="jquery.js">
+
+<link rel="stylesheet" type="text/css" href="CSS/portfolio_C.css"> 
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+  
+ <!--Navigation bar-->
+ <div id="home">
+ 
+
+  <!--Decoration side bars-->
+  <div id="sidebars-left"></div>
+  <div id="sidebars-right"></div>
+  <div id="sidebars-bottom"></div>
+ 
+  <!--Top bar-->
+  <div class="topnav" id="myTopnav">
+
+
+  <a href="#home">Home</a>
+  <a href="#games">Games</a>
+  <a href="#art">Art</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="threebars()">
+   
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+
+ <br><br><br><br>
+
+ </div>
+
+</head>
+
+
+
+
+ <!--Title-->
+ <div>
+  <br>
+  <h2 style="text-align: center; font-size: 200%;">Hi, my name's</h2>
+  <h1 style="text-align: center; font-size: 400%; margin-top:0px;">ELECTRO / LORENZO ARIENTI</h1>
+  <hr  id="horiz_title">
+
+ </div>
+
+
+
+ <!--Small introcution-->
+ <div class="linktab">
+    <div >
+
+     <h1 style="font-size: 110%; text-align:center; ">
+     
+      I'm an <span class="yellowtext">artist</span> and <span class="yellowtext">game developer</span>,
+      But I try new things all the time.<br>In this portfolio website you'll be
+      able to access everything I've worked on that is public.
+  
+      <br><br><br>
+      The site is still a WIP, resizing the window<br>might make some things broken
+
+     </h1>
+
+     
+     
+      <!--Social buttons-->
+      <div class="social-tab">
+           <a id="social-a" href="https://twitter.com/EIectroDev" target="_blank"> <i class="fab fa-twitter"></i> </a>
+           <a href="https://discord.gg/KRfvxPTtP7" target="_blank"> <i class="fab fa-discord"></i> </a>
+           <a href="https://electrodev.itch.io/" target="_blank"> <i class="fab fa-itch-io"></i> </a>
+           <a href="https://github.com/ElectroDev1" target="_blank"> <i class="fab fa-github"></i> </a>
+          
+           
+           <a href="https://eiectro.newgrounds.com/" target="_blank" class="first-image parent"  
+           style="margin-top: -2px; " >
+          
+            <img src="ASSETS/NEWGROUNDS/tankman1.png" width="40" height="40" style="margin-top: 5; background-size: auto 10px;" alt="Newgrounds">
+            <img src="ASSETS/NEWGROUNDS/tankman2.png" width="40" height="40" style="margin-top: 5; background-size: auto 10px;" alt="Newgrounds" class="hover">   
+
+           </a>
+           
+        
+      </div>
+      <div id="games"></div>
+      
+       
+  </div>
+    
+    
+
+ </div >
+  
+  
+  <!--Games-->
+  <div class="Games-tab">
+   
+      <hr style="width:70%;">
+   
+      <h2 style="font-size: 400%; text-align: center;">
+
+          GAMES
+          <div id="art"></div>
+
+
+         
+
+      </h2>
+
+      <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
+      
+          Commercial games
+
+      </h3>
+   
+
+      <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
+      
+          Game jam games
+
+      </h3>
+
+      <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
+      
+          Fan games
+
+      </h3>
+   
+  
+  </div>
+
+
+ <!--Art-->
+ <div class="Art-tab">
+
+   <hr style="width:70%;">
+
+   <h2 style="font-size: 400%; text-align: center;">
+  
+       ART
+       <div id="about"></div>
+
+   </h2>
+
+  <!--So there should be a set of icons with the art in it, clicking on one would
+       open a popup with a description and links if possible-->
+
+    <div class="Art-photos">
+
+        <div>
+               <input type="image" src="ASSETS/ICONS/Electro_yeah_icon.png"  id="Electro-yeah" 
+               class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+        </div>
+
+
+    </div>
+
+ </div>
+
+ <!--Art-->
+ <div class="About-tab">
+
+  <hr style="width:70%;">
+
+  <h2 style="font-size: 400%; text-align: center; justify-content: center;
+  align-items: center;">
+ 
+      ABOUT ME
+
+  </h2>
+
+</div>
+
+
+</div>
+
+
+<div class="container">
+  <h2>Modal Example</h2>
+ 
+  BUTTON
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  MODAL
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+     
+      <div class="modal-content" >
+        <div class="modal-header" >
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+  <!--Footer-->
+  <footer>
+    2021 Electro - <a href="#home" style="color:white">Go to the top</a> 
+  </footer>
+
+ </body>
+
+
+
+
+
+</html>
