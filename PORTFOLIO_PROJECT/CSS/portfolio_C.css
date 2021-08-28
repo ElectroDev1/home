@@ -32,6 +32,10 @@ h1, h2, h3, hr, footer{ color: white;}
 
 
 /*Top navigation bar*/
+#home {
+  height:80%;
+}
+
 .topnav {
  
   position: fixed;
@@ -40,7 +44,7 @@ h1, h2, h3, hr, footer{ color: white;}
     left: 0;
     z-index: 999;
     width: 100%;
-    height: 92px;
+    height: 86px;
  
   background-color: var(--nav_bg_color);
   box-shadow: 0px var(--border-width) var(--nav_bg_color_selected);
@@ -224,16 +228,6 @@ h1, h2, h3, hr, footer{ color: white;}
 }
 
 
-.Art-photos {
-  background-color: var(--nav_bg_color_active);
-  background-position: center;
-
-  width:auto;
-  margin: 0 auto;
-  background-size: 10%;
-
-  display: contents;
-}
 
 
 .modal-content{
@@ -259,4 +253,43 @@ h1, h2, h3, hr, footer{ color: white;}
 
 .modal-footer{
   color:white;
+}
+
+.Art-photos {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width : 900px;
+  margin: 0 auto;
+  display:flex;
+  flex-flow: row wrap;
+  
+  margin-top:-80px;
+  width:fit-content;
+  padding: 10px 0;
+  height : 100%;
+}
+
+.Art-photos div {
+  width:15%;
+  height:15%;
+}
+
+.Photoclass.hover {
+  width:110%;
+}
+/*
+Art modals
+*/
+#Electro-yeah{
+  width:80%;
+  height:80%;
+  margin-top:40px;
+  box-shadow: 10px 10px var(--nav_bg_color_active), -10px -10px var(--nav_bg_color_active)
+  ,10px -10px var(--nav_bg_color_active),  -10px 10px var(--nav_bg_color_active);
+}
+
+#Electro-yeah:hover{
+  transform: scale(1.05, 1.05);
+
 }
