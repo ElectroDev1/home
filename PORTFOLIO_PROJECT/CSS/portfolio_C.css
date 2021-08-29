@@ -26,7 +26,7 @@ body {
   background-color: black;
 }
 
-h1, h2, h3, hr, footer{ color: white;}
+h1, h2, h3, hr, footer, p{ color: white;}
 
 
 
@@ -34,6 +34,7 @@ h1, h2, h3, hr, footer{ color: white;}
 /*Top navigation bar*/
 #home {
   height:80%;
+  z-index: 100;
 }
 
 .topnav {
@@ -92,7 +93,7 @@ h1, h2, h3, hr, footer{ color: white;}
   align-items: center;
   background-color: var(--nav_bg_color); 
   height:100px;  
-  margin-top:25px;  
+ 
   width:fit-content;
   margin: 0 auto;
   display: flex;
@@ -125,7 +126,8 @@ h1, h2, h3, hr, footer{ color: white;}
   margin-top: 30px;
   margin-left: 40px;
 }
-    /*Tankman icon logic*/
+
+/*Tankman icon logic*/
 .hover, .parent:hover img:not(.hover) { 
   display: none;
 }
@@ -259,37 +261,34 @@ h1, h2, h3, hr, footer{ color: white;}
   justify-content: center;
   align-items: center;
   text-align: center;
-  width : 900px;
-  margin: 0 auto;
+   margin: 0 auto;
   display:flex;
   flex-flow: row wrap;
   
-  margin-top:-80px;
+  margin-top:-60px;
   width:fit-content;
-  padding: 10px 0;
+  padding: 20px 0;
   height : 100%;
 }
 
 .Art-photos div {
-  width:15%;
-  height:15%;
+  width:auto;
 }
 
-.Photoclass.hover {
-  width:110%;
-}
 /*
 Art modals
 */
-#Electro-yeah{
-  width:80%;
-  height:80%;
-  margin-top:40px;
+.Art-photos input{
+  width:170px;
+  height:170px;
+  color:white;
+
+  margin-top:12px;
   box-shadow: 10px 10px var(--nav_bg_color_active), -10px -10px var(--nav_bg_color_active)
   ,10px -10px var(--nav_bg_color_active),  -10px 10px var(--nav_bg_color_active);
 }
 
-#Electro-yeah:hover{
+.Art-photos input:hover{
   transform: scale(1.05, 1.05);
 
 }

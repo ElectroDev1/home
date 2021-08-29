@@ -8,23 +8,10 @@
     }
    }
   
-   function change_image() {
-      var url = document.getElementById('Change_Image').src;
-      if (url == 'IMAGES/tankman1.png') {
-          document.getElementById('Change_Image').src = 'IMAGES/tankman2.png';
-      } else {
-          document.getElementById('Change_Image').src = 'IMAGES/tankman1.png';
-      }
-  }
-  change_image();
   
-  $('.first-image').mouseover(function(){
-          $(this).toggleClass('second-image');	
-      });
-      $('.second-image').mouseover(function(){
-          $(this).toggleClass('first-image');	
-      });
-
+  
+  
+  
 
 
 function popupwindow(id) {
