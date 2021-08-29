@@ -20,11 +20,7 @@ main {
    --ng-invert1: 0;
 }
 
-body {
-  margin: 50;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
+
 
 h1, h2, h3, hr, footer, p{ color: white;}
 
@@ -46,6 +42,7 @@ h1, h2, h3, hr, footer, p{ color: white;}
     z-index: 999;
     width: 100%;
     height: 86px;
+    
  
   background-color: var(--nav_bg_color);
   box-shadow: 0px var(--border-width) var(--nav_bg_color_selected);
@@ -67,6 +64,7 @@ h1, h2, h3, hr, footer, p{ color: white;}
   color: var(--nav_txt_color);
   text-align: center;
   position:relative;
+  
   padding: 28px 32px;
   text-decoration: none;
   top:26px;
@@ -88,27 +86,29 @@ h1, h2, h3, hr, footer, p{ color: white;}
 
 /*Socials tab with small links*/
 .social-tab {
-  
-  justify-content: center;
-  align-items: center;
   background-color: var(--nav_bg_color); 
-  height:100px;  
- 
-  width:fit-content;
-  margin: 0 auto;
-  display: flex;
-  margin-top: 40px;
   box-shadow: 10px 10px var(--nav_bg_color_active), -10px -10px var(--nav_bg_color_active)
   ,10px -10px var(--nav_bg_color_active),  -10px 10px var(--nav_bg_color_active);
+  height:100px;  
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   margin: 0 auto;
+  display:flex;
+  width:fit-content;
+  
+  margin-top: 40px;
+
 }
 
 .social-tab a {
   color:white;
-  background-position: center;
+  
   text-decoration: none;
   font-size: 240%;
   padding: 32px 38px;
-  position:relative;
+
   top:0px;
 }
 
@@ -124,7 +124,7 @@ h1, h2, h3, hr, footer, p{ color: white;}
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  margin-left: 40px;
+
 }
 
 /*Tankman icon logic*/
@@ -166,10 +166,10 @@ h1, h2, h3, hr, footer, p{ color: white;}
 
 @keyframes wave-width {
   0%, 100% {
-    width:90%;
+    width:60%;
   }
   50% {
-    width:98%;
+    width:68%;
   }
 }
 
