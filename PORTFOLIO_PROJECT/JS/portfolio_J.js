@@ -13,8 +13,6 @@ function threebars() {
   
   
   
-  
-  
 
 function popupwindow(id) {
 

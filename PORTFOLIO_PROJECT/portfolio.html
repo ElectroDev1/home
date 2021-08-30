@@ -90,8 +90,20 @@
 
       </div>
      
-      <img style="margin-left:20px; width:15%;  box-shadow: 5px 5px var(--nav_bg_color_active), -5px -5px var(--nav_bg_color_active)
-      ,5px -5px var(--nav_bg_color_active),  -5px 5px var(--nav_bg_color_active);" src="ASSETS/LOGOS/logo.gif">
+      <img id="title-logo" src="ASSETS/LOGOS/logo.png">
+
+      <script>
+        $(function() {
+            $("#title-logo").hover(
+                function() {
+                    $(this).attr("src", "ASSETS/LOGOS/logo.gif");
+                },
+                function() {
+                    $(this).attr("src", "ASSETS/LOGOS/logo.png");
+                }                         
+            );                  
+        });
+     </script>
 
     </div>
 
