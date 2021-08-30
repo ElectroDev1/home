@@ -20,6 +20,25 @@
   });
   </script> 
 
+<script> 
+  $(function(){
+    $("#gamejam-button-library").load("LIBRARIES/gamejam_button_library.html"); 
+  });
+  </script> 
+
+<script> 
+  $(function(){
+    $("#gamecom-button-library").load("LIBRARIES/gamecom_button_library.html"); 
+  });
+  </script> 
+
+<script> 
+  $(function(){
+    $("#game-page-library").load("LIBRARIES/game_page_library.html"); 
+  });
+  </script> 
+
+
 
 </head> 
 
@@ -90,14 +109,21 @@ background-attachment: fixed;
 
 
  <!--Title-->
- <div>
-  <br>
-  <h2 style="text-align: center; font-size: 200%;">Hi, my name's</h2>
-  <h1 style="text-align: center; font-size: 400%; margin-top:0px;">ELECTRO</h1>
-  <hr  id="horiz_title">
+ <div class="titlediv">
 
- </div>
+     <div style="margin-top: 30px; margin-left:-20px;">
 
+       <br>
+       <h2 style="text-align: center; font-size: 200%;">Hi, my name's</h2>
+       <h1 style="text-align: center; font-size: 400%; margin-top:0px;">ELECTRO</h1>
+
+     </div>
+     
+     <img style="margin-left:20px; width:15%;  box-shadow: 5px 5px var(--nav_bg_color_active), -5px -5px var(--nav_bg_color_active)
+     ,5px -5px var(--nav_bg_color_active),  -5px 5px var(--nav_bg_color_active);" src="ASSETS/LOGOS/logo.gif">
+
+</div>
+<hr  id="horiz_title">
 
 
  <!--Small introcution-->
@@ -109,9 +135,6 @@ background-attachment: fixed;
       I'm an <span class="yellowtext">artist</span> and <span class="yellowtext">game developer</span>,
       but I try new things all the time.<br>In this portfolio website you'll be
       able to access everything I've worked on that is public.
-  
-      <br><br><br>
-      The site is still a WIP, resizing the window<br>might make some things broken
 
      </h1>
 
@@ -156,28 +179,63 @@ background-attachment: fixed;
 
       </h2>
 
-      <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
+      <!--Commercial games-->
+      <div style="padding: 15px 0px">
+
+        <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
       
           Commercial games
 
-      </h3>
+        </h3>
+
+        <div class="Games" id="gamecom-button-library">
+
+          
+
+        </div>
+
+      </div>
    
 
-      <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
+      <!--Game jam games-->
+      <!--
+      <div style="padding: 15px 0px">
+
+        <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
       
-          Game jam games
+           Game jam games
 
-      </h3>
+        </h3>
 
-      <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
+        <div class="Games">
+
+        
+
+        </div>
+
+      </div> 
+      -->
+
+      <!--Fan games-->
+      <div style="padding: 15px 0px">
+
+         <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
       
-          Fan games
-          <div id="art"></div>
+           Fan games
+        
+         </h3>
 
-      </h3>
-   
+        <div class="Games" id="gamejam-button-library">
+
+
+        </div>
+
+        <div id="art"></div>
   
-  </div>
+      </div>
+
+
+
 
 
  <!--Art-->
@@ -240,6 +298,8 @@ background-attachment: fixed;
 
 </div>
 
+  <!--Game modal lists-->
+  <div id="game-page-library"></div>
 
 
   <!--Art modal lists-->
@@ -254,7 +314,7 @@ background-attachment: fixed;
 
 
   <!--Footer-->
-  <footer>
+  <footer style="margin-left:5px; margin-top:80px;">
     2021 Electro - <a href="#home" style="text-decoration: underline; color:white ">Go to the top</a> 
   </footer>
 
