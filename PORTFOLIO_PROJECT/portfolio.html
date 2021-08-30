@@ -1,153 +1,123 @@
 <!DOCTYPE html>
 
+<!--Get various things-->
+<script src="jquery.js"></script> 
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<link rel="stylesheet" href="CSS\module.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="CSS\module.css">
 
-<head> 
-  <!--Get the libraries-->
-  <script src="jquery.js"></script> 
-  <script> 
-  $(function(){
-    $("#art-button-library").load("LIBRARIES/art_button_library.html"); 
-  });
-  </script> 
-
+<!--Get the libraries-->
 <script> 
-  $(function(){
-    $("#art-page-library").load("LIBRARIES/art_page_library.html"); 
-  });
-  </script> 
+ 
+  $(function(){ $("#art-button-library").load("LIBRARIES/art_button_library.html"); });
 
-<script> 
-  $(function(){
-    $("#gamejam-button-library").load("LIBRARIES/gamejam_button_library.html"); 
-  });
-  </script> 
+  $(function(){ $("#art-page-library").load("LIBRARIES/art_page_library.html"); });
 
-<script> 
-  $(function(){
-    $("#gamecom-button-library").load("LIBRARIES/gamecom_button_library.html"); 
-  });
-  </script> 
+  $(function(){ $("#gamejam-button-library").load("LIBRARIES/gamejam_button_library.html"); });
 
-<script> 
-  $(function(){
-    $("#game-page-library").load("LIBRARIES/game_page_library.html"); 
-  });
-  </script> 
+  $(function(){ $("#gamecom-button-library").load("LIBRARIES/gamecom_button_library.html"); });
 
+  $(function(){ $("#game-page-library").load("LIBRARIES/game_page_library.html"); });
 
+</script> 
 
-</head> 
 
 <html>
 
-<style>
-  body {
+  <!--Head-->
+  <head> 
+    
+    <!--Background-->
+    <style>
 
-font-family: Arial, Helvetica, sans-serif;
-background-color: black;
-
-background-color:rgb(18, 2, 66);
-
-background-image: linear-gradient(to bottom, rgba(0, 4, 41, 0.5) 0%,rgba(0, 4, 41, 0.5) 100%),  url("ASSETS/site_background.png");
-background-size:cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-
-
-}
-</style>
-
-<!--//////////////////////////////////////-->
-
-<body>
-
-
-<link href="jquery.js">
-
-<link rel="stylesheet" type="text/css" href="CSS/portfolio_C.css"> 
-
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
- <!--Background-->
-
+      body {
   
- <!--Navigation bar-->
- <div id="home">
- 
-
-
-  <!--Top bar-->
-  <div class="topnav" id="myTopnav">
-
-
-  <a href="#home">Home</a>
-  <a href="#games">Games</a>
-  <a href="#art">Art</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="threebars()">
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+      background-color:rgb(18, 2, 66);
+      background-image: linear-gradient(to bottom, rgba(0, 4, 41, 0.5) 0%,rgba(0, 4, 41, 0.5) 100%),  url("ASSETS/site_background.png");
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  
+     }
    
-    <i class="fa fa-bars"></i>
+    </style>
 
-  </a>
-  </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="jquery.js">
+    <link rel="stylesheet" type="text/css" href="CSS/portfolio_C.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <br><br><br><br>
+    <!--Navigation bar-->
+    <div id="home">
 
- </div>
+      <!--Top bar-->
+      <div class="topnav" id="myTopnav">
 
-</head>
+       <a href="#home">Home</a>
+       <a href="#games">Games</a>
+       <a href="#art">Art</a>
+       <a href="#about">About</a>
+       <a href="javascript:void(0);" class="icon" onclick="threebars()">
+   
+          <i class="fa fa-bars"></i>
+
+       </a>
+
+      </div>
+
+      <br><br><br><br>
+
+    </div>
+ 
+  </head> 
 
 
+  <!--Body-->
 
+  <body>
 
- <!--Title-->
- <div class="titlediv">
+    <!--Title-->
+    <div class="titlediv">
 
-     <div style="margin-top: 30px; margin-left:-20px;">
+      <div style="margin-top: 30px; margin-left:-20px;">
 
-       <br>
-       <h2 style="text-align: center; font-size: 200%;">Hi, my name's</h2>
-       <h1 style="text-align: center; font-size: 400%; margin-top:0px;">ELECTRO</h1>
+         <br>
+         <h2 style="text-align: center; font-size: 200%;">Hi, my name's</h2>
+         <h1 style="text-align: center; font-size: 400%; margin-top:0px;">ELECTRO</h1>
 
-     </div>
+      </div>
      
-     <img style="margin-left:20px; width:15%;  box-shadow: 5px 5px var(--nav_bg_color_active), -5px -5px var(--nav_bg_color_active)
-     ,5px -5px var(--nav_bg_color_active),  -5px 5px var(--nav_bg_color_active);" src="ASSETS/LOGOS/logo.gif">
+      <img style="margin-left:20px; width:15%;  box-shadow: 5px 5px var(--nav_bg_color_active), -5px -5px var(--nav_bg_color_active)
+      ,5px -5px var(--nav_bg_color_active),  -5px 5px var(--nav_bg_color_active);" src="ASSETS/LOGOS/logo.gif">
 
-</div>
-<hr  id="horiz_title">
+    </div>
 
+    <hr  id="horiz_title">
 
- <!--Small introcution-->
- <div class="linktab">
-    <div >
+    <!--Small introcution-->
+    <div class="linktab">
+    
+      <div>
 
-     <h1 style="font-size: 110%; text-align:center; ">
+        <h1 style="font-size: 110%; text-align:center; ">
      
-      I'm an <span class="yellowtext">artist</span> and <span class="yellowtext">game developer</span>,
-      but I try new things all the time.<br>In this portfolio website you'll be
-      able to access everything I've worked on that is public.
+          I'm an <span class="yellowtext">artist</span> and <span class="yellowtext">game developer</span>,
+          but I try new things all the time.<br>In this portfolio website you'll be
+          able to access everything I've worked on that is public.
 
-     </h1>
+        </h1>
+ 
+        <!--Social buttons-->
+        <div class="social-tab">
 
-     
-     
-      <!--Social buttons-->
-      <div class="social-tab">
            <a id="social-a" href="https://twitter.com/EIectroDev" target="_blank"> <i class="fab fa-twitter"></i> </a>
            <a href="https://discord.gg/KRfvxPTtP7" target="_blank"> <i class="fab fa-discord"></i> </a>
            <a href="https://electrodev.itch.io/" target="_blank"> <i class="fab fa-itch-io"></i> </a>
            <a href="https://github.com/ElectroDev1" target="_blank"> <i class="fab fa-github"></i> </a>
           
-           
            <a href="https://eiectro.newgrounds.com/" target="_blank" class="first-image parent"  
            style="margin-top: -2px; " >
           
@@ -157,25 +127,21 @@ background-attachment: fixed;
            </a>
            
         
-      </div>
+        </div>
 
-      <div id="games"></div>
+        <div id="games"></div>
        
-  </div>
+      </div>
     
-    
- </div >
+    </div>
   
-  
-  <!--Games-->
-  <div class="Games-tab">
+    <!--Games-->
+    <div class="Games-tab">
    
       <hr style="width:50%;">
-   
       <h2 style="font-size: 400%; text-align: center;">
 
-          GAMES
-          
+          GAMES      
 
       </h2>
 
@@ -188,15 +154,10 @@ background-attachment: fixed;
 
         </h3>
 
-        <div class="Games" id="gamecom-button-library">
-
-          
-
-        </div>
+        <div class="Games" id="gamecom-button-library"></div>
 
       </div>
-   
-
+    
       <!--Game jam games-->
       <!--
       <div style="padding: 15px 0px">
@@ -207,11 +168,7 @@ background-attachment: fixed;
 
         </h3>
 
-        <div class="Games">
-
-        
-
-        </div>
+        <div class="Games"></div>
 
       </div> 
       -->
@@ -219,109 +176,84 @@ background-attachment: fixed;
       <!--Fan games-->
       <div style="padding: 15px 0px">
 
-         <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
+        <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">
       
-           Fan games
+          Fan games
         
-         </h3>
+        </h3>
 
-        <div class="Games" id="gamejam-button-library">
-
-
-        </div>
+        <div class="Games" id="gamejam-button-library"></div>
 
         <div id="art"></div>
   
       </div>
 
+    </div>
 
+    <!--Art-->
+    <div class="Art-tab">
 
+      <hr style="width:50%;">
 
+      <h2 style="font-size: 400%; text-align: center;">
+         ART
+      </h2>
 
- <!--Art-->
- <div class="Art-tab">
+      <h3 style="text-align: center; color:white; margin-top: -40px;">
+          2020/2021
+      </h3>
 
-   <hr style="width:50%;">
+      <!--Art buttons-->
+      <div class="Art-photos" id="art-button-library"></div>
+    
+    </div>
 
-   <h2 style="font-size: 400%; text-align: center;">
-       ART
-   </h2>
+    <!--About-->
+    <div class="About-tab">
+   
+      <hr style="width:50%;">
+  
+      <h2 style="font-size: 400%; text-align: center; justify-content: center; align-items: center;">
+ 
+        ABOUT ME
+        <div id="about"></div>
 
-   <h3 style="text-align: center; color:white; margin-top: -40px;">
-       2020/2021
-   </h3>
+      </h2>
 
-    <!--Art buttons-->
-    <div class="Art-photos" id="art-button-library">
+      <h4 style="text-align: center; color:white; margin-top:-40px;">
 
-         
+          I'm <span class="yellowtext">Electro</span>, a 17 year old artist and programmer from Italy.
+          <br><br>
+          While I have been drawing for my whole life, I've only been programming for 3 years, starting with Gamemaker 8.1.
+          <br>
+          I've always been fascinated about making games and bringing my characters to life, always trying to improve my game development skills
+          <br>
+          as well as learning more professional programming languages, but I'm still very early into them.
+          <br><br>
+          You can contact me on <a href="https://twitter.com/EIectroDev" target="_blank" class="yellowtext">Twitter</a> or you can 
+          send me an <a href="mailto:electrogamesbusinnes@gmail.com" class="yellowtext">email</a>, I'll try to answer as soon as I can.
+    
+      </h4>
 
     </div>
-    
- </div>
 
 
+    <!--Game modal lists-->
+    <div id="game-page-library"></div>
 
- <!--About-->
- <div class="About-tab">
-   
-  <hr style="width:50%;">
+    <!--Art modal lists-->
+    <div id="art-page-library"></div>
   
-  <h2 style="font-size: 400%; text-align: center; justify-content: center;
-  align-items: center;">
- 
-      ABOUT ME
-      <div id="about"></div>
+    <!--Decoration side bars-->
+    <div id="sidebars-left"></div>
+    <div id="sidebars-right"></div>
+    <!--<div id="sidebars-bottom"></div>-->
 
-  </h2>
+    <!--Footer-->
+    <footer style="margin-left:5px; margin-top:80px;">
+      2021 Electro - <a href="#home" style="text-decoration: underline; color:white ">Go to the top</a> 
+    </footer>
 
-
-
-  <h4 style="text-align: center; color:white; margin-top:-40px;">
-     I'm <span class="yellowtext">Electro</span>, a 17 year old artist and programmer from Italy.
-     <br><br>
-     While I have been drawing for my whole life, I've only been programming for 3 years, starting with Gamemaker 8.1.
-     <br>
-    I've always been fascinated about making games and bringing my characters to life, always trying to improve my game development skills
-    <br>
-    as well as learning more professional programming languages, but I'm still very early into them.
-
-    <br><br>
-    You can contact me on <a href="https://twitter.com/EIectroDev" target="_blank" class="yellowtext">Twitter</a> or you can send me an
-    <a href="mailto:electrogamesbusinnes@gmail.com" class="yellowtext">email</a>, I'll try to answer as soon as
-    I can.
-  </h4>
-
-  
-</div>
-
-
-</div>
-
-  <!--Game modal lists-->
-  <div id="game-page-library"></div>
-
-
-  <!--Art modal lists-->
-  <div id="art-page-library"></div>
-  
-
-  <!--Decoration side bars-->
-  <div id="sidebars-left"></div>
-  <div id="sidebars-right"></div>
-  <!--<div id="sidebars-bottom"></div>-->
- 
-
-
-  <!--Footer-->
-  <footer style="margin-left:5px; margin-top:80px;">
-    2021 Electro - <a href="#home" style="text-decoration: underline; color:white ">Go to the top</a> 
-  </footer>
-
- </body>
-
-
-
-
+  </body>
 
 </html>
