@@ -11,7 +11,28 @@ function threebars() {
 
 }
   
-  
+function logoUpdate() {
+  //Change logo and colors based on date  
+        
+        //Get month
+        var _date = new Date();
+        var _month = _date.getMonth();
+
+        //Look at the month and change this value
+        var _logoSrc;
+        var _colorVar;
+
+        if(_month==9){ _logoSrc = "ASSETS/LOGOS/logo_halloween.png"; }
+        else{
+            _logoSrc = "ASSETS/LOGOS/logo.png";
+        }
+
+       
+        document.getElementById("title-logo").src = _logoSrc;
+        return;
+        
+        
+}  
   
 
 function popupwindow(id) {
@@ -23,3 +44,4 @@ $("[input[name = 'button']").click(function(){
 });
   
 }
+

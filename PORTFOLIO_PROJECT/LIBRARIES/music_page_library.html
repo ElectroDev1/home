@@ -1,0 +1,303 @@
+
+  <!--Electro who-->
+  <div class="modal fade" id="WhoModal" role="dialog">
+
+    <div class="modal-dialog">
+    
+     
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <div style="display: flex;">
+            
+          <div id="circle">
+          <img id="Music-player" class="Music-button"  alt="Play and pause"
+          src="ASSETS/MISC/audio_icon.png"
+          onclick="play(0);">
+          </div>  
+
+          <audio id="audio0"  class="audio_player"  src="ASSETS/AUDIO/jungle_mood.mp3" 
+          ontimeupdate="
+                
+                const minutes = Math.floor(this.currentTime / 60);
+                const seconds = Math.floor(this.currentTime % 60);
+                const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+
+                const DU_minutes = Math.floor(this.duration / 60);
+                const DU_seconds = Math.floor(this.duration % 60);
+                const DU_returnedSeconds = DU_seconds < 10 ? `0${DU_seconds}` : `${DU_seconds}`;
+              
+                  document.getElementById('musictime0').innerHTML =
+              
+                  Math.floor(minutes)+':'+returnedSeconds + ' / ' + Math.floor(DU_minutes)+':'+DU_returnedSeconds;"
+          ></audio>
+
+          <div style="margin: auto 10px;">
+            <h4 class="modal-title">Electro random arrangements - Jungle mood</h4>
+            <h3 id="musictime0" class="music-timers" style="margin-top: -2px;">
+              <!--Timebar-->
+              0:00 / 1:06
+            </h3>
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="modal-body">
+
+           
+                <img 
+                style="width:60%; margin-left: auto; margin-right: auto;
+                display: block; " src="ASSETS/COVERS/who.png" alt="Electro"
+                onclick="play(0)">
+           
+                
+            
+
+          <p>First public music attempt, mostly to try the basics.</p>
+
+        </div>
+        
+        <div class="modal-footer">
+          
+          <div class="modal-link-buttons">
+
+             <!--button links-->
+
+            <a href="https://soundcloud.com/electrozap/jungle-mood?si=8c5ee77a7a644ef08670c0dcf5668f51" target="_blank" class="Showlink-button" 
+               >
+
+              <div style="text-decoration: none; text-align: center; color:white; ">
+
+                <h4>SoundCloud</h4>
+
+              </div>
+
+          </a>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!--Spamton piano-->
+  <div class="modal fade" id="SpamPianoModal" role="dialog">
+
+    <div class="modal-dialog">
+    
+     
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <div style="display: flex;">
+            
+            <div id="circle">
+              <img id="Music-player" class="Music-button"  alt="Play and pause"
+              src="ASSETS/MISC/audio_icon.png"
+              onclick="play(1);">
+              </div> 
+
+          <audio id="audio1" class="audio_player" src="ASSETS/AUDIO/dialtone_clean.wav" 
+          ontimeupdate="
+                
+                const minutes = Math.floor(this.currentTime / 60);
+                const seconds = Math.floor(this.currentTime % 60);
+                const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+
+                const DU_minutes = Math.floor(this.duration / 60);
+                const DU_seconds = Math.floor(this.duration % 60);
+                const DU_returnedSeconds = DU_seconds < 10 ? `0${DU_seconds}` : `${DU_seconds}`;
+              
+                  document.getElementById('musictime1').innerHTML =
+              
+                  Math.floor(minutes)+':'+returnedSeconds + ' / ' + Math.floor(DU_minutes)+':'+DU_returnedSeconds;"
+          ></audio>
+
+          <div style="margin: auto 10px;">
+          <h4 class="modal-title">Deltarune Chapter 2 - "Dialtone" Clean piano version</h4>
+          <h3 id="musictime1" class="music-timers" style="margin-top: -2px;">
+            <!--Timebar-->
+            0:00 / 1:28
+          </h3>
+          </div>
+
+
+        </div>
+
+        </div>
+
+        <div class="modal-body">
+
+           
+                <img 
+                style="width:60%; margin-left: auto; margin-right: auto;
+                display: block; " src="ASSETS/COVERS/piano.png" alt="Spamton"
+                onclick="play(1)">
+           
+                
+            
+
+          <p>A cover of "Dialtone" from DELTARUNE, replacing the chiptune piano with a cleaner piano.</p>
+
+        </div>
+        
+        <div class="modal-footer">
+          
+          <div class="modal-link-buttons">
+
+             <!--button links-->
+
+            <a href="https://soundcloud.com/electrozap/deltarune-chapter-2-dialtone-clean-piano-version?si=7dba44f6f2974099813e648126b7243b" target="_blank" class="Showlink-button" 
+               >
+
+              <div style="text-decoration: none; text-align: center; color:white; ">
+
+                <h4>SoundCloud</h4>
+
+              </div>
+
+          </a>
+
+          <a href="https://deltarune.com/" target="_blank" class="Showlink-button" style=" padding:8px 30px;;"
+                   >
+    
+                  <div style="text-decoration: none; text-align: center; color:white; display:flex; ">
+                    <img src="ASSETS/MISC/DELT_logo.png" style="width:50%; margin-left:-18px;"> 
+                    <h4 style="margin: auto 0; margin-left:10px;">Get Deltarune</h4>
+    
+                  </div>
+    
+          </a>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!--Empty town-->
+  <div class="modal fade" id="CityModal" role="dialog">
+
+        <div class="modal-dialog">
+        
+         
+          <div class="modal-content">
+    
+            <div class="modal-header">
+    
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+    
+              <div style="display: flex;">
+                
+                <div id="circle">
+                  <img id="Music-player" class="Music-button"  alt="Play and pause"
+                  src="ASSETS/MISC/audio_icon.png"
+                  onclick="play(2);">
+                  </div> 
+    
+              <audio id="audio2" class="audio_player" src="ASSETS/AUDIO/empty_town.wav"
+              ontimeupdate="
+                
+                const minutes = Math.floor(this.currentTime / 60);
+                const seconds = Math.floor(this.currentTime % 60);
+                const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+
+                const DU_minutes = Math.floor(this.duration / 60);
+                const DU_seconds = Math.floor(this.duration % 60);
+                const DU_returnedSeconds = DU_seconds < 10 ? `0${DU_seconds}` : `${DU_seconds}`;
+              
+                  document.getElementById('musictime2').innerHTML =
+              
+                  Math.floor(minutes)+':'+returnedSeconds + ' / ' + Math.floor(DU_minutes)+':'+DU_returnedSeconds;"
+
+               ></audio>
+    
+              <div style="margin: auto 10px;">
+              <h4 class="modal-title" >Deltarune Chapter 1 - "Empty town" Cover</h4>
+
+                
+              <h3 id="musictime2" class="music-timers" style="margin-top: -2px;">
+                <!--Timebar-->
+                0:00 / 2:09
+              </h3>
+              
+              
+              </div>
+
+            </div>
+    
+            </div>
+    
+            <div class="modal-body">
+    
+               
+                    <img 
+                    style="width:60%; margin-left: auto; margin-right: auto;
+                    display: block; " src="ASSETS/COVERS/city.png" alt="Spamton"
+                    onclick="play(2)">
+               
+                    
+                
+    
+              <p>A cover of "Empty town" from DELTARUNE, replacing the chiptune with smooother instruments and giving it
+                  an overall different feeling.</p>
+
+              
+    
+            </div>
+            
+            <div class="modal-footer">
+              
+              <div class="modal-link-buttons">
+    
+                 <!--button links-->
+    
+                <a href="https://soundcloud.com/electrozap/deltarune-chapter-1-empty-town-cover?si=c6523ab3b7584cbbb674e40870ccde84" target="_blank" class="Showlink-button" 
+                   >
+    
+                  <div style="text-decoration: none; text-align: center; color:white; ">
+    
+                    <h4>SoundCloud</h4>
+    
+                  </div>
+    
+              </a>
+
+
+              <a href="https://deltarune.com/" target="_blank" class="Showlink-button" style=" padding:8px 30px;;"
+                   >
+    
+                  <div style="text-decoration: none; text-align: center; color:white; display:flex; ">
+                    <img src="ASSETS/MISC/DELT_logo.png" style="width:50%; margin-left:-18px;"> 
+                    <h4 style="margin: auto 0; margin-left:10px;">Get Deltarune</h4>
+    
+                  </div>
+    
+              </a>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+          
+        </div>
+    
+  </div>
+    
