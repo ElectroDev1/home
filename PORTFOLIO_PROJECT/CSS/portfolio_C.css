@@ -319,7 +319,10 @@ h1, h2, h3, hr, footer, p{ color: white;}
   width:fit-content;
   padding: 20px 0;
   height : 100%;
-
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
  
 }
 
@@ -339,7 +342,6 @@ h1, h2, h3, hr, footer, p{ color: white;}
 }
 
 .Art-photos input:hover{
- 
   transform: rotate(10deg);
   transform: scale(1.2) rotate(5deg);
 }
@@ -356,7 +358,10 @@ h1, h2, h3, hr, footer, p{ color: white;}
   width:fit-content;
   padding: 10px 90px;
   height : 100%;
-  
+  -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
  
 }
 
@@ -394,7 +399,10 @@ h1, h2, h3, hr, footer, p{ color: white;}
   width:100px;
   max-width:max-content;
   height:100%;
-  
+  -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
   margin:0 5%;
   box-shadow: 4px 4px var(--nav_bg_color_active), -4px -4px var(--nav_bg_color_active)
   ,4px -4px var(--nav_bg_color_active),  -4px 4px var(--nav_bg_color_active);
