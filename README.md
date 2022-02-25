@@ -1,2 +1,1 @@
-# Electro_potroflio
-Repository for my portfolio website
+# electrodev1.github.io
