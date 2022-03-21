@@ -1,6 +1,8 @@
 //Set themes based on month
 $(function() {
 
+    
+
     var _date = new Date();
     var _month = _date.getMonth();
     var _day = _date.getDate();
@@ -15,7 +17,7 @@ $(function() {
            document.documentElement.style.setProperty('--nav_bg_color_active', '#f0d909');    
            document.documentElement.style.setProperty('--nav_bg_color_selected', '#f0d909');
            document.body.style.backgroundImage = 
-           "linear-gradient(to bottom, rgba(0, 4, 41, 0.5) 0%,rgba(0, 4, 41, 0.5) 100%),  url('ASSETS/site_background.png')"; 
+           "radial-gradient(circle, rgba(85,10,117,0.65) 20%, rgba(51,6,71,1) 80%, rgba(51,6,71,1) 81%),url('ASSETS/bkg.png')"; 
            break;
 
            case 9://Halloween
@@ -51,8 +53,7 @@ $(function() {
 
     $("#title-logo").attr("src", "ASSETS/LOGOS/pfp.png");
 
-    document.body.style.backgroundImage = 
-           "linear-gradient(rgba(51, 6, 71, 0.6) 10%,rgba(85, 10, 117, 1) 120%), url('ASSETS/bkg.png')";
+
 
 }
 );
